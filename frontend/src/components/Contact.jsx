@@ -4,7 +4,7 @@ import React from "react";
 const INFO = {
   whatsapp: "+917303422101", // country code + number, no spaces
   phone: "+918958953939",
-  email: "himkirantours@gmail.com",
+  email: "info@himkirantours.in",
   //   instagram: "Himkirantours", // just the handle, no @
   instagram: "himkirantours",
   address:
