@@ -84,7 +84,7 @@ Default login (set in `.env`):
 ## File structure
 
 ```
-kumaon-soul-travels/
+Him-Kiran-Tours/
 ├── backend/
 │   ├── middleware/authMiddleware.js
 │   ├── models/Tour.js

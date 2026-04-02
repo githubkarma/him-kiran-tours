@@ -5,7 +5,7 @@ const INFO = {
   whatsapp: "+917303422101", // country code + number, no spaces
   phone: "+918958953939",
   email: "himkirantours@gmail.com",
-  //   instagram: "kumaonsoul_travels", // just the handle, no @
+  //   instagram: "Himkirantours", // just the handle, no @
   instagram: "himkirantours",
   address:
     "Near Haldwani Bus Stand, Haldwani, Nainital District, Uttarakhand — 263139",
