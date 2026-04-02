@@ -26,10 +26,10 @@
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
     <meta name="language" content="English" />
-    <meta name="geo.region" content="IN-UT" />
+    <!-- <meta name="geo.region" content="IN-UT" /> -->
     <meta name="geo.placename" content="Haldwani, Uttarakhand, India" />
-    <meta name="geo.position" content="29.2183;79.5130" />
-    <meta name="ICBM" content="29.2183, 79.5130" />
+    <!-- <meta name="geo.position" content="29.2183;79.5130" />
+    <meta name="ICBM" content="29.2183, 79.5130" /> -->
 
     <!-- ═══════════════════════════════════════════════════════════
          OPEN GRAPH — controls link preview on WhatsApp, Facebook,
@@ -76,8 +76,8 @@
          CANONICAL — prevents Google penalising duplicate URLs
          UPDATE with your real domain once deployed
     ═══════════════════════════════════════════════════════════ -->
-    <link rel="canonical" href="https://himkirantours.in" />
-    <link rel="icon" href="/frontend/public/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
     <link
       rel="apple-touch-icon"
       href="/frontend//public/apple-touch-icon.png"
@@ -90,10 +90,10 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "TravelAgency",
+        "@type": "TourOperator",
         "name": "Him Kiran Tours",
         "description": "Trek and tour operator based in Haldwani, Uttarakhand specialising in Himalayan treks, Char Dham Yatra and all Uttarakhand packages. All India Tourist Permit holder.",
-        "url": "https://him-kirantours.in",
+        "url": "[https://himkirantours.in](https://himkirantours.in)",
         "telephone": "+91-89859-53939",
         "email": "info@himkirantours.in",
         "address": {
@@ -104,11 +104,11 @@
           "postalCode": "263139",
           "addressCountry": "IN"
         },
-        "geo": {
+        <!-- "geo": {
           "@type": "GeoCoordinates",
           "latitude": 29.2183,
           "longitude": 79.513
-        },
+        }, -->
         "openingHours": "Mo-Su 09:00-19:00",
         "priceRange": "₹₹",
         "currenciesAccepted": "INR",
@@ -170,7 +170,7 @@
     </script>
 
     <!-- Favicon -->
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
