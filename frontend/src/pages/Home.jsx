@@ -184,7 +184,7 @@ const AboutSection = () => (
             Called to the Peaks
           </h2>
           <p className="text-gray-600 leading-relaxed mb-4">
-            Him Kiran Tours was established to bring a new level of professional
+            Him Kiran Tour was established to bring a new level of professional
             standards to the Kumaon Himalayas. While many travel agencies cover
             the entire country, we choose to do one thing perfectly: curate
             exceptional journeys through the unspoiled landscapes of Kumaon,
