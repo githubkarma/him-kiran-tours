@@ -12,6 +12,7 @@ body {
   font-family: "DM Sans", system-ui, sans-serif;
   background-color: #f8fafc;
   color: #1e293b;
+  overflow-x: hidden;
 }
 
 h1,
