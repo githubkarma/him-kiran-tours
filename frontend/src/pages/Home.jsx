@@ -20,7 +20,7 @@ const TOURS = [
     description:
       " Adi Kailash (5,945 m) in Uttarakhand's Pithoragarh district is a deeply sacred Himalayan pilgrimage. Surrounded by serene alpine lakes and majestic snow-capped peaks, it offers breathtaking spiritual vistas, ancient lore, and unforgettable high-altitude adventure.",
     imageUrl:
-      "https://res.cloudinary.com/dmf3brw0e/image/upload/v1781179124/adii_awokgi.jpg",
+      "https://res.cloudinary.com/dmf3brw0e/image/upload/v1781180663/adikailashwide_1_1_hdfjab.png",
     // highlights: [
     //   "Natural snow ॐ symbol on Om Parvat",
     //   "Parvati Sarovar sacred lake at 18,000 ft",
