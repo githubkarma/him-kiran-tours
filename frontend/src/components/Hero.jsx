@@ -37,7 +37,7 @@ const Hero = () => (
         Your Gateway from Haldwani to the Himalayas
       </p>
       <p className="text-white/60 text-sm md:text-base max-w-2xl mx-auto mb-12 leading-relaxed">
-        Himalayan treks · Char Dham Yatra · Uttarakhand tours
+        Himalayan treks · Uttarakhand tours
       </p>
 
       {/* CTAs */}

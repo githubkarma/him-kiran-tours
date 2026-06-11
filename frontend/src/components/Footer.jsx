@@ -19,7 +19,7 @@ const Footer = () => (
           </div>
           <p className="text-sm leading-relaxed mb-4">
             Licensed tour operator based in Haldwani, Uttarakhand. Specialising
-            in Himalayan treks, Char Dham Yatra and all-India travel.
+            in Himalayan treks and all-India travel.
           </p>
           <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-blue-300 text-xs px-3 py-2 rounded-lg">
             <svg
