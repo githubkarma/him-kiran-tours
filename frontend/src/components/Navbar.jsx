@@ -14,7 +14,7 @@ const Navbar = () => {
   const navLinks = [
     { label: "Home", href: "/#home" },
     { label: "Haldwani Treks", href: "/#tours" },
-    { label: "Char Dham", href: "/#chardham" },
+    // { label: "Char Dham", href: "/#chardham" },
 
     { label: "About", href: "/#about" },
     { label: "Contact", href: "/#contact" },

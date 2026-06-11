@@ -14,69 +14,69 @@ const TOURS = [
     title: "Adi Kailash Yatra",
     category: "Sacred Circuit",
     // destinations: ["Dharchula", "Gunji", "Adi Kailash", "Om Parvat"],
-    duration: "5 Days / 4 Nights",
+    duration: "Customized Itinerary ",
     // difficulty: "Moderate",
     price: "Contact Us For Price",
     description:
-      'Embark on a divine pilgrimage to Adi Kailash, the earthly abode of Lord Shiva. Witness the sacred Om Parvat — a natural snow formation of the holy "ॐ" symbol — as you traverse stunning high-altitude valleys and ancient trade routes.',
+      " Adi Kailash (5,945 m) in Uttarakhand's Pithoragarh district is a deeply sacred Himalayan pilgrimage. Surrounded by serene alpine lakes and majestic snow-capped peaks, it offers breathtaking spiritual vistas, ancient lore, and unforgettable high-altitude adventure.",
     imageUrl:
-      "https://res.cloudinary.com/dmf3brw0e/image/upload/v1774966813/adikalash_hr8feu.jpg",
-    highlights: [
-      "Natural snow ॐ symbol on Om Parvat",
-      "Parvati Sarovar sacred lake at 18,000 ft",
-    ],
+      "https://res.cloudinary.com/dmf3brw0e/image/upload/v1781179124/adii_awokgi.jpg",
+    // highlights: [
+    //   "Natural snow ॐ symbol on Om Parvat",
+    //   "Parvati Sarovar sacred lake at 18,000 ft",
+    // ],
   },
   {
     id: 2,
     title: "Om Parvat",
     category: "Sacred Circuit",
     // destinations: ["Pithoragarh", "Darma Valley", "Om Parvat Base"],
-    duration: "5 Days / 4 Nights",
+    duration: "Customized Itinerary",
     // difficulty: "Hard",
     price: "Contact Us For Price",
     description:
       "Combine the mystical Om Parvat darshan with an exploration of the pristine Darma Valley — one of the most secluded valleys in the Kumaon Himalayas, home to ancient Bhotiya villages and rare Himalayan flora.",
     imageUrl:
-      "https://res.cloudinary.com/dmf3brw0e/image/upload/v1774966813/omparvat1_tcauk3.jpg",
-    highlights: [
-      "Views of Panchachuli peaks",
-      "Cultural interaction with Bhotiya communities",
-    ],
+      "https://res.cloudinary.com/dmf3brw0e/image/upload/v1781179115/omparvat_w7wohj.jpg",
+    // highlights: [
+    //   "Views of Panchachuli peaks",
+    //   "Cultural interaction with Bhotiya communities",
+    // ],
   },
   {
     id: 3,
     title: "Darma Valley Cultural Trek",
     category: "Sacred Circuit",
     // destinations: ["Dharchula", "Sobla", "Thal", "Darma Valley"],
-    duration: "5 Days / 4 Nights",
+    duration: "Customized Itinerary",
     // difficulty: "Moderate",
     price: "Contact Us For Price",
     description:
       "A soul-stirring journey through Darma Valley dotted with apple orchards, ancient monasteries, and villages that have preserved centuries-old Tibetan-influenced culture. Opens to panoramic views of the Panchachuli and Chhanguch ranges.",
     imageUrl:
-      "https://res.cloudinary.com/dmf3brw0e/image/upload/v1774944945/darma_valley_3_g9imzt.jpg",
-    highlights: [
-      "Apple orchards and village homestays",
-      "Ancient monasteries and prayer flags",
-    ],
+      "https://res.cloudinary.com/dmf3brw0e/image/upload/v1781178181/darma_kxba7o.jpg",
+    // highlights: [
+    //   "Apple orchards and village homestays",
+    //   "Ancient monasteries and prayer flags",
+    // ],
   },
   {
     id: 4,
     title: "Bankatiya — The Glacier Gateway",
     category: "Alpine Adventure",
     // destinations: ["Haldwani", "Munsyari", "Bankatiya Base Camp", "Milam Gateway"],
-    duration: "5 Days / 4 Nights",
+    duration: "Customized Itinerary",
     // difficulty: "Moderate to Challenging",
     price: "Contact Us For Price",
     description:
       "A professional-grade expedition starting from Munsyari into the heart of the Johar Valley. Bankatiya serves as the crucial base camp for the Milam Glacier trek, offering a raw, high-altitude experience surrounded by the towering peaks of the Nanda Devi biosphere.",
     imageUrl:
-      "https://res.cloudinary.com/dmf3brw0e/image/upload/v1774944946/bankathiya_trek_zglfxz.jpg",
-    highlights: [
-      "Base camp experience at the edge of the Milam route",
-      "Traditional Johar Valley hospitality in remote hamlets",
-      "Panoramic views of the Hardeol and Trishuli peaks",
-    ],
+      "https://res.cloudinary.com/dmf3brw0e/image/upload/v1781178181/bankathiya_k56aau.jpg",
+    // highlights: [
+    //   "Base camp experience at the edge of the Milam route",
+    //   "Traditional Johar Valley hospitality in remote hamlets",
+    //   "Panoramic views of the Hardeol and Trishuli peaks",
+    // ],
   },
   {
     id: 5,
@@ -89,88 +89,122 @@ const TOURS = [
     //   "Milam Glacier",
     //   "Bankathiya",
     // ],
-    duration: "5 Days / 4 Nights",
+    duration: "Customized Itinerary",
     // difficulty: "Hard",
     price: "Contact Us For Price",
     description:
       "One of the most rewarding high-altitude treks in Kumaon, following the ancient trade route to Tibet along the Goriganga river. The Bankathiya campsite offers jaw-dropping views of some of the most remote peaks in India.",
     imageUrl:
       "https://res.cloudinary.com/dmf3brw0e/image/upload/v1774944945/milam-glacier_rb1f0s.jpg",
-    highlights: [
-      "Milam Glacier at 13,000+ ft",
-      "Ancient India-Tibet trade route",
-    ],
+    // highlights: [
+    //   "Milam Glacier at 13,000+ ft",
+    //   "Ancient India-Tibet trade route",
+    // ],
   },
   {
     id: 6,
     title: "Khaliya Top Trek",
     category: "Alpine Adventure",
     // destinations: ["Munsyari", "Khaliya Top (3500m)"],
-    duration: "5 Days / 4 Nights",
+    duration: "Customized Itinerary",
     // difficulty: "Moderate",
     price: "Contact Us For Price",
     description:
       "A short but spectacular trek to Khaliya Top at 3,500m offering a panoramic canvas of Panchachuli, Rajrambha, Nanda Kot, and Trishul peaks. Perfect for first-time trekkers who want maximum views with manageable effort.",
     imageUrl:
       "https://res.cloudinary.com/dmf3brw0e/image/upload/v1774944945/khaliya_esp613.jpg",
-    highlights: [
-      "360° view of 5 major Himalayan peaks",
-      "Ideal for first-time trekkers",
-    ],
+    // highlights: [
+    //   "360° view of 5 major Himalayan peaks",
+    //   "Ideal for first-time trekkers",
+    // ],
   },
-  // ... existing tours 1-6 ...
   {
     id: 7,
-    title: "Yamunotri — The Source",
-    category: "CharDham",
-    // duration: "2 Days / 1 Night",
+    title: "Nanda Devi (East Trek)",
+    category: "Alpine Adventure",
+    // destinations: ["Munsyari", "Khaliya Top (3500m)"],
+    duration: "Customized Itinerary",
+    // difficulty: "Moderate",
     price: "Contact Us For Price",
     description:
-      "The first stop of the Char Dham yatra. High in the Garhwal Himalayas, trek to the crystal-clear source of the Yamuna River. Dip in the Surya Kund's thermal springs and seek blessings at the silver idol of Goddess Yamuna.",
+      "The Nanda Devi East Trek (also known as the Nanda Devi East Base Camp Trek) is a demanding yet breathtaking adventure in the Kumaon region of Uttarakhand. Beginning in the picturesque hamlet of Munsiyari, this journey takes you through dense bamboo forests, deep gorges, and rustic villages, culminating in front of the majestic 7,434-meter Nanda Devi East peak.",
     imageUrl:
-      "https://res.cloudinary.com/dmf3brw0e/image/upload/v1774968086/Yamunotri_Temple_View_vkkevk.jpg",
-    highlights: ["Divya Shila sacred rock", "Thermal spring 'Surya Kund'"],
+      "https://res.cloudinary.com/dmf3brw0e/image/upload/v1781178180/nandadevi_syzrqp.jpg",
+    // highlights: [
+    //   "360° view of 5 major Himalayan peaks",
+    //   "Ideal for first-time trekkers",
+    // ],
   },
   {
     id: 8,
-    title: "Gangotri — Descent of Ganga",
-    category: "CharDham",
-    // duration: "2 Days / 1 Night",
+    title: "Nagni Dhura (Unexplored)",
+    category: "Alpine Adventure",
+    // destinations: ["Munsyari", "Khaliya Top (3500m)"],
+    duration: "Customized Itinerary",
+    // difficulty: "Moderate",
     price: "Contact Us For Price",
     description:
-      "Surrounded by deodar and pine forests, Gangotri is where Heaven met Earth. Visit the white granite temple of Goddess Ganga and witness the Bhagirathi river gushing through the rocky Shivalik ranges.",
+      "The Nagni Dhura Trek is a hidden, offbeat alpine trail located in the Munsiyari block of the Pithoragarh district in Uttarakhand. Far less crowded than other commercial Himalayan paths, this moderate-to-hard trek serves as a pristine alternative for travelers seeking raw, untouched wilderness, expansive meadow tops, and dramatic snow-capped vistas.",
     imageUrl:
-      "https://res.cloudinary.com/dmf3brw0e/image/upload/v1774968073/gangotridham_rk3awc.jpg",
-    highlights: ["Bhagirath Shila stone", "Gauri Kund waterfalls"],
+      "https://res.cloudinary.com/dmf3brw0e/image/upload/v1781178179/nagnidhura_1_cwjmzv.png",
+    // highlights: [
+    //   "360° view of 5 major Himalayan peaks",
+    //   "Ideal for first-time trekkers",
+    // ],
   },
-  {
-    id: 9,
-    title: "Kedarnath — Lord of the North",
-    category: "CharDham",
-    // duration: "3 Days / 2 Nights",
-    price: "Contact Us For Price",
-    description:
-      "The most remote of the Char Dhams, situated at 11,755 ft against the backdrop of the Kedarnath peak. A 16km trek leads you to one of the 12 Jyotirlingas, standing as a testament to eternal faith and resilience.",
-    imageUrl:
-      "https://res.cloudinary.com/dmf3brw0e/image/upload/v1774968088/kedarnath1_uycpgb.jpg",
-    highlights: ["Ancient 8th-century temple", "Mandakini river views"],
-  },
-  {
-    id: 10,
-    title: "Badrinath — The Abode of Vishnu",
-    category: "CharDham",
-    // duration: "2 Days / 1 Night",
-    price: "Contact Us For Price",
-    description:
-      "Guarded by the Nar and Narayan peaks, Badrinath is the final destination. Bathe in the Tapt Kund before entering the brightly painted facade of the temple, where Lord Vishnu meditates in the Padmasana posture.",
-    imageUrl:
-      "https://res.cloudinary.com/dmf3brw0e/image/upload/v1774968073/badrinath_i5mbas.jpg",
-    highlights: ["Neelkanth Peak sunrise", "Mana — The Last Indian Village"],
-  },
+  // ... existing tours 1-6 ...
+  // {
+  //   id: 7,
+  //   title: "Yamunotri — The Source",
+  //   category: "CharDham",
+  //   // duration: "2 Days / 1 Night",
+  //   price: "Contact Us For Price",
+  //   description:
+  //     "The first stop of the Char Dham yatra. High in the Garhwal Himalayas, trek to the crystal-clear source of the Yamuna River. Dip in the Surya Kund's thermal springs and seek blessings at the silver idol of Goddess Yamuna.",
+  //   imageUrl:
+  //     "https://res.cloudinary.com/dmf3brw0e/image/upload/v1774968086/Yamunotri_Temple_View_vkkevk.jpg",
+  //   // highlights: ["Divya Shila sacred rock", "Thermal spring 'Surya Kund'"],
+  // },
+  // {
+  //   id: 8,
+  //   title: "Gangotri — Descent of Ganga",
+  //   category: "CharDham",
+  //   // duration: "2 Days / 1 Night",
+  //   price: "Contact Us For Price",
+  //   description:
+  //     "Surrounded by deodar and pine forests, Gangotri is where Heaven met Earth. Visit the white granite temple of Goddess Ganga and witness the Bhagirathi river gushing through the rocky Shivalik ranges.",
+  //   imageUrl:
+  //     "https://res.cloudinary.com/dmf3brw0e/image/upload/v1774968073/gangotridham_rk3awc.jpg",
+  //   // highlights: ["Bhagirath Shila stone", "Gauri Kund waterfalls"],
+  // },
+  // {
+  //   id: 9,
+  //   title: "Kedarnath — Lord of the North",
+  //   category: "CharDham",
+  //   // duration: "3 Days / 2 Nights",
+  //   price: "Contact Us For Price",
+  //   description:
+  //     "The most remote of the Char Dhams, situated at 11,755 ft against the backdrop of the Kedarnath peak. A 16km trek leads you to one of the 12 Jyotirlingas, standing as a testament to eternal faith and resilience.",
+  //   imageUrl:
+  //     "https://res.cloudinary.com/dmf3brw0e/image/upload/v1774968088/kedarnath1_uycpgb.jpg",
+  //   // highlights: ["Ancient 8th-century temple", "Mandakini river views"],
+  // },
+  // {
+  //   id: 10,
+  //   title: "Badrinath — The Abode of Vishnu",
+  //   category: "CharDham",
+  //   // duration: "2 Days / 1 Night",
+  //   price: "Contact Us For Price",
+  //   description:
+  //     "Guarded by the Nar and Narayan peaks, Badrinath is the final destination. Bathe in the Tapt Kund before entering the brightly painted facade of the temple, where Lord Vishnu meditates in the Padmasana posture.",
+  //   imageUrl:
+  //     "https://res.cloudinary.com/dmf3brw0e/image/upload/v1774968073/badrinath_i5mbas.jpg",
+  //   // highlights: ["Neelkanth Peak sunrise", "Mana — The Last Indian Village"],
+  // },
 ];
 // ─────────────────────────────────────────────────────────────────────────────
 
-const CATEGORIES = ["All", "Sacred Circuit", "Alpine Adventure", "CharDham"];
+const CATEGORIES = ["All", "Sacred Circuit", "Alpine Adventure"];
 const AboutSection = () => (
   <section id="about" className="py-24 bg-white">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -226,7 +260,7 @@ const Home = () => {
       : TOURS.filter((t) => t.category === activeCategory);
   const sacred = filtered.filter((t) => t.category === "Sacred Circuit");
   const alpine = filtered.filter((t) => t.category === "Alpine Adventure");
-  const chardham = filtered.filter((t) => t.category === "CharDham");
+  // const chardham = filtered.filter((t) => t.category === "CharDham");
   return (
     <>
       <Hero />
@@ -292,11 +326,12 @@ const Home = () => {
                   <div className="w-1 h-8 bg-forest-700 rounded-full" />
                   <div>
                     <h3 className="font-display text-2xl font-bold text-gray-900">
-                      The Alpine Adventure (Munsyari)
+                      Munsyari Base Trek (Alpine Adventure)
                     </h3>
                     <p className="text-gray-500 text-sm">
-                      High-altitude treks — Munsyari · Milam Glacier · Khaliya
-                      Top
+                      High-altitude treks — Munsyari · Bankathiya · Milam
+                      Glacier · Khaliya · Nanda devi (East Trek) · Nagni
+                      Dhura(Unexplored)
                     </p>
                   </div>
                 </div>
@@ -308,7 +343,7 @@ const Home = () => {
               </div>
             )}
 
-          {(activeCategory === "All" || activeCategory === "CharDham") &&
+          {/* {(activeCategory === "All" || activeCategory === "CharDham") &&
             chardham.length > 0 && (
               <div className="mb-16" id="chardham">
                 <div className="flex items-center gap-3 mb-8">
@@ -329,7 +364,7 @@ const Home = () => {
                   ))}
                 </div>
               </div>
-            )}
+            )} */}
         </div>
       </section>
 
