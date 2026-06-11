@@ -65,7 +65,7 @@ const Footer = () => (
         </div>
 
         {/* Char Dham */}
-        <div>
+        {/* <div>
           <h4 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">
             Char Dham Yatra
           </h4>
@@ -87,7 +87,7 @@ const Footer = () => (
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
 
         {/* Uttarakhand */}
       </div>
