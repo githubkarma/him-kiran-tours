@@ -1,8 +1,48 @@
-// import { Helmet } from "react-helmet-async";
-import React, { useState } from "react";
+import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import TourCard from "../components/TourCard";
+import AboutSection from "../components/AboutSection";
+import ToursSection from "../components/ToursSection";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+
+// ── SEO (replaces the <head> tags from public/index.html) ────────────────────
+export const metadata = {
+  title: "Him Kiran Tours | Himalayan Treks from Haldwani",
+  description:
+    "Best tour operator in Haldwani, Uttarakhand. Adi Kailash, Om Parvat, Milam Glacier, Munsyari, Khaliya Top packages. All India Tourist Permit holder. Book via WhatsApp.",
+  keywords:
+    "Haldwani trek, Kumaon trek, Adi Kailash yatra, Om Parvat trek, Milam glacier trek, Munsyari tour package, Uttarakhand tour operator, Haldwani travel agent, Khaliya top trek, Darma valley trek, Kedarnath yatra, Badrinath yatra, Yamunotri yatra, Gangotri yatra, best travel agent Haldwani, Kumaon travel, himalayan trek Haldwani",
+  authors: [{ name: "Him Kiran Tours, Haldwani" }],
+  robots: "index, follow",
+  openGraph: {
+    type: "website",
+    siteName: "Him Kiran Tours",
+    title: "Him Kiran Tours | Himalayan Treks",
+    description:
+      "Trek and tour operator based in Haldwani, Uttarakhand. Specialising in Adi Kailash, Milam Glacier, Munsyari and all Uttarakhand packages. All India Tourist Permit holder.",
+    url: "https://himkirantours.in",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=1200&q=80",
+        width: 1200,
+        height: 630,
+        alt: "Himalayan peaks — Him Kiran Tours",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Him Kiran Tours | Himalayan Treks from Haldwani",
+    description:
+      "Trek and tour operator in Haldwani, Uttarakhand. Adi Kailash, Milam Glacier and more.",
+    images: [
+      "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=1200&q=80",
+    ],
+  },
+  other: { "geo.placename": "Haldwani, Uttarakhand, India" },
+};
+
+export const viewport = { themeColor: "#1e40af" };
 
 // ── YOUR TOUR DATA ────────────────────────────────────────────────────────────
 // To edit a tour: change values below and save. No database needed.
@@ -204,173 +244,17 @@ const TOURS = [
 ];
 // ─────────────────────────────────────────────────────────────────────────────
 
-const CATEGORIES = ["All", "Sacred Circuit", "Alpine Adventure"];
-const AboutSection = () => (
-  <section id="about" className="py-24 bg-white">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="grid lg:grid-cols-2 gap-16 items-center">
-        <div>
-          <span className="text-mountain-900 text-xs font-semibold uppercase tracking-widest">
-            About Us
-          </span>
-          <h2 className="font-display text-4xl font-bold text-gray-900 mt-3 mb-6 leading-tight">
-            Born in the Foothills,
-            <br />
-            Called to the Peaks
-          </h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            Him Kiran Tour was established to bring a new level of professional
-            standards to the Kumaon Himalayas. While many travel agencies cover
-            the entire country, we choose to do one thing perfectly: curate
-            exceptional journeys through the unspoiled landscapes of Kumaon,
-            Uttarakhand.
-          </p>
-          <p className="text-gray-600 leading-relaxed mb-8">
-            We operate as a dedicated bridge between the modern traveler and the
-            deep, spiritual heritage of the mountains. By combining local
-            logistical expertise with a commitment to seamless service, we
-            ensure every tour is safe, authentic, and professionally managed
-            from start to finish.
-          </p>
-        </div>
-        <div className="relative">
-          <img
-            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=700&q=85"
-            alt="Himalayan landscape"
-            className="rounded-2xl w-full h-96 object-cover shadow-xl"
-          />
-          <div className="absolute -bottom-6 -left-6 bg-mountain-900 text-white rounded-2xl p-5 shadow-xl">
-            <p className="font-display font-semibold text-lg">
-              Starting from Haldwani
-            </p>
-            <p className="text-blue-200 text-sm mt-1">Uttarakhand, India</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-);
-
-const Home = () => {
-  const [activeCategory, setActiveCategory] = useState("All");
-
-  const filtered =
-    activeCategory === "All"
-      ? TOURS
-      : TOURS.filter((t) => t.category === activeCategory);
-  const sacred = filtered.filter((t) => t.category === "Sacred Circuit");
-  const alpine = filtered.filter((t) => t.category === "Alpine Adventure");
-  // const chardham = filtered.filter((t) => t.category === "CharDham");
+export default function Home() {
   return (
     <>
-      <Hero />
-      <AboutSection />
-
-      <section id="tours" className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="text-mountain-900 text-xs font-semibold uppercase tracking-widest">
-              Our Packages
-            </span>
-            <h2 className="font-display text-4xl font-bold text-gray-900 mt-3 mb-4">
-              Himalayan Trek Packages
-            </h2>
-            <p className="text-gray-500 max-w-2xl mx-auto">
-              All treks depart from Haldwani. Choose your adventure — a sacred
-              pilgrimage circuit or a high-altitude alpine challenge.
-            </p>
-            <div className="flex items-center justify-center gap-2 mt-8 flex-wrap">
-              {CATEGORIES.map((cat) => (
-                <button
-                  key={cat}
-                  onClick={() => setActiveCategory(cat)}
-                  className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 ${
-                    activeCategory === cat
-                      ? "bg-mountain-900 text-white shadow-md"
-                      : "bg-white text-gray-600 border border-gray-200 hover:border-mountain-900 hover:text-mountain-900"
-                  }`}
-                >
-                  {cat}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {(activeCategory === "All" || activeCategory === "Sacred Circuit") &&
-            sacred.length > 0 && (
-              <div className="mb-16">
-                <div className="flex items-center gap-3 mb-8">
-                  <div className="w-1 h-8 bg-mountain-900 rounded-full" />
-                  <div>
-                    <h3 className="font-display text-2xl font-bold text-gray-900">
-                      The Sacred Circuit (Dharchula)
-                    </h3>
-                    <p className="text-gray-500 text-sm">
-                      Pilgrimages — Adi Kailash · Om Parvat · Darma Valley
-                    </p>
-                  </div>
-                </div>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {sacred.map((tour) => (
-                    <TourCard key={tour.id} tour={tour} />
-                  ))}
-                </div>
-              </div>
-            )}
-
-          {(activeCategory === "All" ||
-            activeCategory === "Alpine Adventure") &&
-            alpine.length > 0 && (
-              <div className="mb-16">
-                <div className="flex items-center gap-3 mb-8">
-                  <div className="w-1 h-8 bg-forest-700 rounded-full" />
-                  <div>
-                    <h3 className="font-display text-2xl font-bold text-gray-900">
-                      Munsyari Base Trek (Alpine Adventure)
-                    </h3>
-                    <p className="text-gray-500 text-sm">
-                      High-altitude treks — Munsyari · Bankathiya · Milam
-                      Glacier · Khaliya · Nanda devi (East Trek) · Nagni
-                      Dhura(Unexplored)
-                    </p>
-                  </div>
-                </div>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {alpine.map((tour) => (
-                    <TourCard key={tour.id} tour={tour} />
-                  ))}
-                </div>
-              </div>
-            )}
-
-          {/* {(activeCategory === "All" || activeCategory === "CharDham") &&
-            chardham.length > 0 && (
-              <div className="mb-16" id="chardham">
-                <div className="flex items-center gap-3 mb-8">
-                  <div className="w-1 h-8 bg-amber-600 rounded-full" />
-                  <div>
-                    <h3 className="font-display text-2xl font-bold text-gray-900">
-                      The Holy Char Dham
-                    </h3>
-                    <p className="text-gray-500 text-sm">
-                      Garhwal Pilgrimage — Yamunotri · Gangotri · Kedarnath ·
-                      Badrinath
-                    </p>
-                  </div>
-                </div>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {chardham.map((tour) => (
-                    <TourCard key={tour.id} tour={tour} />
-                  ))}
-                </div>
-              </div>
-            )} */}
-        </div>
-      </section>
-
-      <Contact />
+      <Navbar />
+      <main>
+        <Hero />
+        <AboutSection />
+        <ToursSection tours={TOURS} />
+        <Contact />
+      </main>
+      <Footer />
     </>
   );
-};
-
-export default Home;
+}

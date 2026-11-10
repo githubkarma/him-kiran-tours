@@ -43,7 +43,7 @@ const Hero = () => (
       {/* CTAs */}
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a
-          href="/#tours"
+          href="#tours"
           className="bg-mountain-900 hover:bg-mountain-700 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:-translate-y-1"
         >
           Explore Tours

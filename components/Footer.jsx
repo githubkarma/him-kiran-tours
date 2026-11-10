@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Footer = () => (
   <footer className="bg-gray-950 text-white/60 py-12">
@@ -53,10 +52,7 @@ const Footer = () => (
               "Khaliya Top Trek",
             ].map((t) => (
               <li key={t}>
-                <a
-                  href="/#tours"
-                  className="hover:text-white transition-colors"
-                >
+                <a href="#tours" className="hover:text-white transition-colors">
                   {t}
                 </a>
               </li>
@@ -79,7 +75,7 @@ const Footer = () => (
             ].map((t) => (
               <li key={t}>
                 <a
-                  href="/#chardham"
+                  href="#chardham"
                   className="hover:text-white transition-colors"
                 >
                   {t}
