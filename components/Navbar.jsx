@@ -1,5 +1,6 @@
+"use client";
+
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -12,12 +13,12 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { label: "Home", href: "/#home" },
-    { label: "Haldwani Treks", href: "/#tours" },
-    // { label: "Char Dham", href: "/#chardham" },
+    { label: "Home", href: "#home" },
+    { label: "Haldwani Treks", href: "#tours" },
+    // { label: "Char Dham", href: "#chardham" },
 
-    { label: "About", href: "/#about" },
-    { label: "Contact", href: "/#contact" },
+    { label: "About", href: "#about" },
+    { label: "Contact", href: "#contact" },
   ];
 
   return (
@@ -28,7 +29,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
+        <a href="#home" className="flex items-center gap-2">
           {/* Uncomment below and remove the placeholder once you have logo.png in public/ */}
           {/* <img src="/logo.png" alt="Him Kiran Tour" className="h-10 w-auto" /> */}
           <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-green-600 rounded-lg flex items-center justify-center">
@@ -44,7 +45,7 @@ const Navbar = () => {
               Tours
             </span>
           </div>
-        </Link>
+        </a>
 
         {/* Desktop links */}
         <div className="hidden lg:flex items-center gap-6">

@@ -1,116 +1,36 @@
-# Him Kiran Tours
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## First-time setup
+## Getting Started
 
-### Step 1 — Install dependencies
-
-```bash
-# Backend
-cd backend
-npm install
-
-# Frontend (open a new terminal)
-cd frontend
-npm install
-```
-
-### Step 2 — Configure environment
+First, run the development server:
 
 ```bash
-cd backend
-cp .env.example .env
-```
-
-Open `.env` and set your `MONGO_URI`. Everything else can stay as default for local dev.
-
-### Step 3 — Seed the database
-
-```bash
-cd backend
-npm run seed
-```
-
-This adds all 6 tour packages (3 Sacred Circuit + 3 Alpine Adventure).
-
----
-
-## Running the project
-
-You need **two terminals open at the same time**.
-
-**Terminal 1 — Backend:**
-
-```bash
-cd backend
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-Runs on http://localhost:5000
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-**Terminal 2 — Frontend:**
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-```bash
-cd frontend
-npm start
-```
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Opens http://localhost:3000 in your browser automatically.
+## Learn More
 
----
+To learn more about Next.js, take a look at the following resources:
 
-## Admin panel
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Go to http://localhost:3000/admin/login
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-Default login (set in `.env`):
+## Deploy on Vercel
 
-- Username: `admin`
-- Password: `admin123`
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
----
-
-## Personalising the site
-
-| What to change    | Where                                                                                   |
-| ----------------- | --------------------------------------------------------------------------------------- |
-| WhatsApp number   | `src/components/Contact.jsx` line 4 and `src/components/TourCard.jsx` line 5            |
-| Email / Instagram | `src/components/Contact.jsx` lines 5–7                                                  |
-| Office address    | `src/components/Contact.jsx` line 8                                                     |
-| Google Maps embed | `src/components/Contact.jsx` — look for the comment near the bottom                     |
-| Logo              | Drop `logo.png` into `frontend/public/` then uncomment the `<img>` line in `Navbar.jsx` |
-
----
-
-## File structure
-
-```
-Him-Kiran-Tours/
-├── backend/
-│   ├── middleware/authMiddleware.js
-│   ├── models/Tour.js
-│   ├── routes/
-│   │   ├── tourRoutes.js
-│   │   └── adminRoutes.js
-│   ├── server.js
-│   ├── seed.js
-│   └── .env.example
-└── frontend/
-    ├── public/index.html
-    ├── postcss.config.js
-    ├── tailwind.config.js
-    └── src/
-        ├── components/
-        │   ├── Navbar.jsx
-        │   ├── Hero.jsx
-        │   ├── TourCard.jsx
-        │   ├── Contact.jsx
-        │   └── Footer.jsx
-        ├── pages/
-        │   ├── Home.jsx
-        │   ├── AdminLogin.jsx
-        │   └── AdminPanel.jsx
-        ├── context/AuthContext.jsx
-        ├── services/api.js
-        ├── App.jsx
-        └── index.js
-```
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
